@@ -27,11 +27,12 @@
                 <div class="buttons">
                     <button></button>
                 </div>
-                <ol>
-                    <li v-for="(item, index) in list" :class="{barrato: item.done}">
-                        {{item.text}}
+                <ul>
+                    <li v-for="(item, index) in list" >
+                        <span :class="{barrato: item.done}">{{item.text}}</span>
+                        <span class="red" @click="remove(index)">X</span>
                     </li>
-                </ol>
+                </ul>
 
             </div>
         </div>
