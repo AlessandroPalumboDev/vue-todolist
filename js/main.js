@@ -20,15 +20,22 @@ createApp({
                     text: 'Mangiare',
                     done: true
                 }, {
-                    text: 'Coding',
-                    done: false
+                    text: 'Coding (di nuovo)',
+                    done: true
                 }, {
                     text: 'Lavarsi',
                     done: false
                 }, {
+                    text: 'Coding (ancora un po\')',
+                    done: false
+                }, {
                     text: 'Dormire',
                     done: false
-                }
+                }, {
+                    text: 'Sognare il codice',
+                    done: false
+                },
+
             ],
 
             newItem: '',
@@ -45,12 +52,17 @@ createApp({
 
         // funzione di aggiunta elemento
         add() {
-            this.list.push(
-                {
-                    text: this.newItem,
-                    done: false
-                }
-            );
+            // condizione per non aggiungere item senza testo
+            if (this.newItem.length > 0) {
+                this.list.push(
+                    {
+                        text: this.newItem,
+                        done: false
+                    }
+                );
+            }else{
+                alert('Devi digitare qualcosa da fare prima di premere il tasto "Aggiungi"')
+            }
             this.newItem = '';
         },
 
