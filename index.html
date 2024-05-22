@@ -25,15 +25,15 @@
         <div class="container">
             <div id="app">
                 <div class="buttons">
-                    <button></button>
+                    <input type="text" placeholder="Scrivi qui" v-model="newItem">
+                    <button @click="add()">Aggiungi</button>
                 </div>
                 <ul>
-                    <li v-for="(item, index) in list" >
+                    <li v-for="(item, index) in list">
                         <span :class="{barrato: item.done}">{{item.text}}</span>
-                        <span class="red" @click="remove(index)">X</span>
+                        <button class="red" @click="remove(index)">X</button>
                     </li>
                 </ul>
-
             </div>
         </div>
 

@@ -28,3 +28,10 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
     - Creo la X nel file html e le do un stile su css
     - Aggiungo evento al click che richiama una funzione
     - Creo la funzione di rimozione dell'oggeto dall' array
+
+
+- MILESTONE 3
+    - Creo nel file html input di testo e pulsante aggiungi dando loro lo stile su css
+    - Aggiungo v-model all'input di testo 
+    - Aggiungo al bottone evento al click che usa una funzione di aggiunta elemento
+    - Creo funzione che 1- Pusha nell'array un oggetto che per chiave text ha il v-model e chiave done ovviamente false. 2- Svuota l'input di testo modificandolo tramite il v-model.
