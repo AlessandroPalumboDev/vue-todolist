@@ -25,7 +25,7 @@
         <div class="container">
             <div id="app">
                 <div class="buttons">
-                    <input type="text" placeholder="Scrivi qui" v-model="newItem">
+                    <input type="text" placeholder="Scrivi qui" v-model="newItem" @keyup.enter="add">
                     <button @click="add()">Aggiungi</button>
                 </div>
                 <ul>

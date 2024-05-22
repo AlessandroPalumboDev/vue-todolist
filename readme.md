@@ -35,3 +35,6 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
     - Aggiungo v-model all'input di testo 
     - Aggiungo al bottone evento al click che usa una funzione di aggiunta elemento
     - Creo funzione che 1- Pusha nell'array un oggetto che per chiave text ha il v-model e chiave done ovviamente false. 2- Svuota l'input di testo modificandolo tramite il v-model.
+
+- BONUS 1
+ - Aggiungo evento al keyup del testo enter che sfrutta la stessa funzione del bottone di aggiunta al campo di input
