@@ -24,7 +24,7 @@ createApp({
                     done: true
                 }, {
                     text: 'Lavarsi',
-                    done: false
+                    done: true
                 }, {
                     text: 'Coding (ancora un po\')',
                     done: false
@@ -60,7 +60,7 @@ createApp({
                         done: false
                     }
                 );
-            }else{
+            } else {
                 alert('Devi digitare qualcosa da fare prima di premere il tasto "Aggiungi"')
             }
             this.newItem = '';
@@ -70,5 +70,6 @@ createApp({
         reverse(index) {
             this.list[index].done = !this.list[index].done;
         },
+
     },
 }).mount('#app');
