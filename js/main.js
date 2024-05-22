@@ -31,7 +31,7 @@ createApp({
                 }
             ],
 
-            currentIndex: 0,
+            newItem: '',
         }
     },
 
@@ -43,6 +43,7 @@ createApp({
             this.list.splice(index, 1)
         },
 
+        // funzione di aggiunta elemento
         add() {
             this.list.push(
                 {
@@ -51,8 +52,11 @@ createApp({
                 }
             );
             this.newItem = '';
-        }
-    }
+        },
 
-
-}).mount('#app')
+        // funzione di cambio valore booleano della chiave done
+        reverse(index) {
+            this.list[index].done = !this.list[index].done;
+        },
+    },
+}).mount('#app');

@@ -24,21 +24,22 @@
     <main>
         <div class="container">
             <div id="app">
+                <!-- campo di input testo e botto per aggiunta -->
                 <div class="buttons">
                     <input type="text" placeholder="Scrivi qui" v-model="newItem" @keyup.enter="add">
                     <button @click="add()">Aggiungi</button>
                 </div>
+
+                <!-- todo list -->
                 <ul>
-                    <li v-for="(item, index) in list">
+                    <li v-for="(item, index) in list" @click="reverse(index)">
                         <span :class="{barrato: item.done}">{{item.text}}</span>
                         <button class="red" @click="remove(index)">X</button>
                     </li>
                 </ul>
             </div>
         </div>
-
     </main>
-
 
     <!-- vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
