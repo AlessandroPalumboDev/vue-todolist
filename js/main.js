@@ -45,8 +45,9 @@ createApp({
     methods: {
 
         // funzione rimozione elemento
-        remove(index) {
-            this.list.splice(index, 1)
+        remove(indexRicevuto) {
+            // this.list.splice(index, 1)
+            this.list = this.list.filter((_, index) => index !== indexRicevuto)
         },
 
         // funzione di aggiunta elemento
