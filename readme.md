@@ -44,7 +44,3 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 - BONUS 2
     - Creo funzione che inverte il valore della chiave done
     - Aggiungo evento al click all'elemento in pagina che sfrutta la funzione di inversione
-
-
-## Problemi da risolvere:
-- Quando clicco per rimuovere un item, il successivo prende il click per il cambio del valore booleano.

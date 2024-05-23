@@ -32,8 +32,8 @@
 
                 <!-- todo list -->
                 <ul>
-                    <li v-for="(item, index) in list" @click="reverse(index)">
-                        <span :class="{barrato: item.done}">{{item.text}}</span>
+                    <li v-for="(item, index) in list">
+                        <span :class="{barrato: item.done}" @click="reverse(index)">{{item.text}}</span>
                         <button class="red lumen" @click="remove(index)">X</button>
                     </li>
                 </ul>

@@ -15,16 +15,16 @@ createApp({
                     done: true
                 }, {
                     text: 'Coding',
-                    done: true
+                    done: false
                 }, {
                     text: 'Mangiare',
-                    done: true
+                    done: false
                 }, {
                     text: 'Coding (di nuovo)',
-                    done: true
+                    done: false
                 }, {
                     text: 'Lavarsi',
-                    done: true
+                    done: false
                 }, {
                     text: 'Coding (ancora un po\')',
                     done: false
