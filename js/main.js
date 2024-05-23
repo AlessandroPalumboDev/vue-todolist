@@ -53,7 +53,7 @@ createApp({
         // funzione di aggiunta elemento
         add() {
             // condizione per non aggiungere item senza testo
-            if (this.newItem.length > 0) {
+            if (this.newItem !== '') {
                 this.list.push(
                     {
                         text: this.newItem,
