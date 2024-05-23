@@ -54,6 +54,7 @@ createApp({
         add() {
             // condizione per non aggiungere item senza testo
             if (this.newItem !== '') {
+        //  if (!this.newItem) return;
                 this.list.push(
                     {
                         text: this.newItem,
