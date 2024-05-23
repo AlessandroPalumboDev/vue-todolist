@@ -34,6 +34,7 @@ main {
 main .container {
     width: 50%;
     min-width: 350px;
+    max-width: 1200px;
     background-color: rgb(32, 32, 32);
     margin: 50px auto;
     border-radius: 20px;
@@ -99,7 +100,7 @@ main .container {
     align-items: center;
 }
 
-li span{
+li span {
     width: 100%;
 }
 
