@@ -46,7 +46,6 @@ createApp({
 
         // funzione rimozione elemento
         remove(index) {
-            // Se hai un array e vuoi togliere determinati elementi nel mezzo, ( quindi non usando .shift() o .pop() ) dovrai passargli come primo argomento la posizione da cui partire (ricordati che i array in JavaScript partono dalla posizione “0”), come secondo argomento il numero di elementi che intendi togliere (incluso il primo!).
             this.list.splice(index, 1)
         },
 

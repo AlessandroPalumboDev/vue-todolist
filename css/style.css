@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans Khojki", sans-serif;
+    user-select: none;
 }
 
 /* HEADER */
@@ -35,6 +36,7 @@ main .container {
     width: 50%;
     min-width: 350px;
     max-width: 1200px;
+    min-height: 200px;
     background-color: rgb(32, 32, 32);
     margin: 50px auto;
     border-radius: 20px;
